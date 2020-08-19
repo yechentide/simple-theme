@@ -1,0 +1,154 @@
+#page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*-/border: 2px solid lightblue;
+    /*-/box-sizing: border-box;*/
+}
+
+#page-header a {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    /*-/background-color: lightblue;*/
+}
+
+
+
+.hamburger-btn {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 32px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 1000;
+    /*-/background-color: lightblue;*/
+}
+
+.hamburger-btn > div {
+    position: relative;
+}
+
+.hamburger-btn span {
+    width: 100%;
+    padding-top: 4px;
+    left: 0;
+    display: block;
+    background: rgba(209,209,209,1);
+    position: absolute;
+    transition: top .5s ease, -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out, top .5s ease;
+    transition: transform .6s ease-in-out, top .5s ease, -webkit-transform .6s ease-in-out;
+}
+
+.hamburger-btn span:nth-child(1) {
+    top: 0;
+}
+.hamburger-btn span:nth-child(2) {
+    top: 12px;
+}
+.hamburger-btn span:nth-child(3) {
+    top: 24px;
+}
+
+.nav-open .hamburger-btn {
+    left: 132px;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 132px;
+    }
+}
+.nav-open .hamburger-btn span:nth-child(1) {
+    top: 12px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-open .hamburger-btn span:nth-child(2) {
+    display: none;
+}
+.nav-open .hamburger-btn span:nth-child(3) {
+    top: 12px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+
+header nav, .bg {
+    /**/display: none;
+}
+
+.nav-open .bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 990;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.nav-open nav {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 300px;
+    height: 100vh;
+    z-index: 999;
+    animation-duration: 1.2s;
+    animation-name: slidein01;
+}
+@keyframes slidein01 {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+.nav-open ul {
+    width: 100%;
+    height: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-top: 90px;
+}
+
+.nav-open li {
+    width: 100%;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.nav-open li:hover {
+    background-color: rgba(209,209,209,0.84);
+}
+
+.nav-open li a{
+    color: #666;
+    font-family: "Dosis";
+    font-size: 24px;
+    font-weight: inherit;
+    font-style: normal;
+    line-height: 1.7em;
+    letter-spacing: normal;
+    text-transform: none;
+}

@@ -1,0 +1,21 @@
+html {
+    font-size: 62.5%; /* -> 10px; */
+}
+
+body {
+    margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+main {
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        margin-top: 30vh;
+    }
+}

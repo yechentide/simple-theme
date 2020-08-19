@@ -1,0 +1,14 @@
+footer {
+    margin: 100px auto 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 499px) {
+    footer {
+        margin-top: 0;
+    }
+}
+
+small {
+    color: grey;
+}
