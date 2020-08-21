@@ -1,0 +1,1 @@
+<h1> This theme doesn't support index template </h1>
