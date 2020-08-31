@@ -1,0 +1,18 @@
+.about {
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 70vh;
+}
+
+.about p {
+    max-width: 100%;
+    font-size: 1.7rem;
+}
+
+.about :first-child {
+    font-weight: bold;
+}
+
+
+

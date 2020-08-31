@@ -21,7 +21,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(122, 122, 122, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 
   display: flex;
   align-items: center;
@@ -35,13 +35,13 @@
 }
 
 .text-wrapper {
-  background-color: white;
   width: 50vw;
-  height: 50vh;
+  height: auto;
   max-width: 500px;
   max-height: 500px;
-  border-radius: 30px;
   padding: 10px;
+  font-size: 1.7rem;
+  overflow: scroll;
 }
 
 @media screen and (max-width: 499px) {

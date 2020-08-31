@@ -56,7 +56,7 @@
 .hamburger-btn span:nth-child(3) {
     top: 24px;
 }
-
+/*
 .nav-open .hamburger-btn {
     left: 132px;
     animation-duration: 1.5s;
@@ -70,6 +70,7 @@
         left: 132px;
     }
 }
+*/
 .nav-open .hamburger-btn span:nth-child(1) {
     top: 12px;
     -webkit-transform: rotate(45deg);
@@ -110,7 +111,7 @@ header nav, .bg {
     max-width: 300px;
     height: 100vh;
     z-index: 999;
-    animation-duration: 1.2s;
+    animation-duration: 0.7s;
     animation-name: slidein01;
 }
 @keyframes slidein01 {
@@ -134,7 +135,7 @@ header nav, .bg {
 .nav-open li {
     width: 100%;
     margin: 0 auto 10px;
-    text-align: center;
+    padding: 10px 20px;
     font-size: 3rem;
 }
 
