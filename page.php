@@ -12,8 +12,9 @@
                             $content = get_the_content();
                             $content = strip_tags( $content );
                             $content = trim($content);
+                            $str = preg_replace( '/(\n\n\n\n)/', '<br><br>', $content );
                             echo '<span>';
-                            echo $content;
+                            echo $str;
                             echo '</span>';
                         endwhile;
                     endif;
@@ -28,7 +29,9 @@
                     $content = $post->post_content;
                     $content = strip_shortcodes($content);
 
-                    preg_match_all('/<img(?:.*?)src=[\"\'](.*?)[\"\'](?:.*?)>/e', $content, $all_imgs);
+                    $pattern = '/<img.*?src\s*=\s*[\"|\'](.*?)[\"|\'].*?>/i';
+                    preg_match_all($pattern, $content, $all_imgs);
+                    // var_dump($all_imgs);
 
                     foreach($all_imgs[1] as $img_url) {
                         echo '<div class="swiper-slide"><img src="' . $img_url . '" alt=""></div>';
