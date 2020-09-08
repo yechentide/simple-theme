@@ -4,16 +4,23 @@
     }
 }
 
-.top-page-visual .wp-block-image > a {
+.top-page-visual .wp-block-image {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
-    width: 100vw;
-    height: 88vh;
+    width: 85vw;
+    height: 90vh;
+    margin: auto;
 
     /*-/background-color: lightgrey;*/
+}
+
+.top-page-visual .wp-block-image a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .top-page-visual .wp-block-image img {

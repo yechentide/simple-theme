@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <main>
+    <main class="pages-main">
 
         <div id="title" data-splitting><?php the_title(); ?></div>
 

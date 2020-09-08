@@ -13,12 +13,26 @@ function toggleHamburger() {
     const header = document.querySelector("header");
     if(header.classList.contains("nav-open")) {
         header.classList.remove("nav-open");
+
+        document.body.classList.remove("restrict-scroll");
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
     } else {
         header.classList.add("nav-open");
+
+        document.body.classList.add("restrict-scroll");
+        document.body.style.top = `-${window.scrollY}px`;
     }
 }
 
 function closeHamburger() {
     const header = document.querySelector("header");
     header.classList.remove("nav-open");
+
+    document.body.classList.remove("restrict-scroll");
+    const top = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
+

@@ -4,18 +4,34 @@ html {
 
 body {
     margin: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 a{
 	text-decoration: none;
 }
 
-main {
-    margin-top: 100px;
-}
 
 @media screen and (min-width: 500px) {
     main {
         margin-top: 30vh;
     }
+}
+
+.pages-main {
+    height: 65vh;
+    padding-top: 20vh;
+}
+
+.restrict-scroll {
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    align-items: center;
+}
+.restrict-scroll main {
+    margin-left: 7.5vw;
+}
+.restrict-scroll #title {
+    margin-left: 8.5vw;
 }

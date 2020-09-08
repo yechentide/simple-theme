@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Dosis";
+    src: url(../font/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+
 #page-header {
     position: fixed;
     top: 0;
@@ -22,13 +28,13 @@
 
 .hamburger-btn {
     position: fixed;
-    top: 30px;
+    top: 40px;
     left: 30px;
-    width: 32px;
-    height: 28px;
+    width: 26px;
+    height: 20px;
     cursor: pointer;
-    z-index: 1000;
-    /*-/background-color: lightblue;*/
+    /*z-index: 1000;
+    background-color: lightblue;*/
 }
 
 .hamburger-btn > div {
@@ -42,19 +48,21 @@
     display: block;
     background: rgba(209,209,209,1);
     position: absolute;
-    transition: top .5s ease, -webkit-transform .6s ease-in-out;
-    transition: transform .6s ease-in-out, top .5s ease;
+    /*transition: top .5s ease, -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out, top .5s ease;*/
     transition: transform .6s ease-in-out, top .5s ease, -webkit-transform .6s ease-in-out;
+    border-radius: 3px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .hamburger-btn span:nth-child(1) {
     top: 0;
 }
 .hamburger-btn span:nth-child(2) {
-    top: 12px;
+    top: 8px;
 }
 .hamburger-btn span:nth-child(3) {
-    top: 24px;
+    top: 16px;
 }
 /*
 .nav-open .hamburger-btn {
@@ -71,6 +79,7 @@
     }
 }
 */
+/*
 .nav-open .hamburger-btn span:nth-child(1) {
     top: 12px;
     -webkit-transform: rotate(45deg);
@@ -84,7 +93,7 @@
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
+*/
 
 
 header nav, .bg {
@@ -107,12 +116,20 @@ header nav, .bg {
     display: block;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 80vw;
     max-width: 300px;
-    height: 100vh;
+    height: 90vh;
     z-index: 999;
     animation-duration: 0.7s;
     animation-name: slidein01;
+    overflow-y: scroll;
+    font-family: Dosis;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+}
+.nav-open nav::-webkit-scrollbar {
+    /* Chrome, Safari 対応 */
+    display:none;
 }
 @keyframes slidein01 {
     from {
@@ -125,17 +142,17 @@ header nav, .bg {
 
 .nav-open ul {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
 .nav-open li {
-    width: 100%;
-    margin: 0 auto 10px;
-    padding: 10px 20px;
+    /*width: 100%;*/
+    margin: 0 auto;
+    padding: 0 20px 20px;
     font-size: 3rem;
 }
 

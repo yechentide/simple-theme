@@ -21,9 +21,9 @@ function custom_theme_assets() {
         wp_enqueue_style( 'top-main-style', THEME_ROOT.'/css/top-main.css', array(), filemtime(THEME_ROOT.'/css/top-main.css') );
     } else {
         // ライブラリ関連ファイル
-        wp_enqueue_style( 'splitting-style', 'https://unpkg.com/splitting/dist/splitting.css' );
-        wp_enqueue_style( 'splitting-cells-style', 'https://unpkg.com/splitting/dist/splitting-cells.css' );
-        wp_enqueue_script( 'splitting-script', 'https://unpkg.com/splitting/dist/splitting.min.js' );
+        wp_enqueue_style( 'splitting-style', THEME_ROOT.'/lib/Splitting/splitting.css' );
+        wp_enqueue_style( 'splitting-cells-style', THEME_ROOT.'/lib/Splitting/splitting-cells.css' );
+        wp_enqueue_script( 'splitting-script', THEME_ROOT.'/lib/Splitting/splitting.min.js' );
         // 自分のファイル
         wp_enqueue_style( 'detail-textAnime-style', THEME_ROOT.'/css/detail-textAnime.css', array(), filemtime(THEME_ROOT.'/css/detail-textAnime.css') );
         wp_enqueue_script( 'detail-textAnime-script', THEME_ROOT.'/js/detail-textAnime.js', array(), filemtime(THEME_ROOT.'/js/detail-textAnime.js') );
