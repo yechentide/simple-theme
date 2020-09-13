@@ -1,12 +1,6 @@
 footer {
-    margin: 100px auto 20px;
+    margin-top: 0;
     text-align: center;
-}
-
-@media screen and (max-width: 499px) {
-    footer {
-        margin-top: 0;
-    }
 }
 
 small {

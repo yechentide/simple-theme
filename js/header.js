@@ -7,6 +7,11 @@ window.addEventListener("load", function() {
 
     const nav = document.getElementById("menu-nav-menu");
     nav.addEventListener("click", closeHamburger);
+
+    const h = document.documentElement.clientHeight;
+    const navArea = document.querySelector("nav");
+    navArea.style.height = h+"px";
+    document.body.style.height = h+"px";
 });
 
 function toggleHamburger() {
